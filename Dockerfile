@@ -2,5 +2,6 @@ FROM Python:3.9
 WORKDIR /app
 COPY  . /app
 RUN pip install -r requirements.txt
+EXPOSE 5000
 CMD ["python" , "main.py"]
-EXPOSE 8080 22 8000
+
